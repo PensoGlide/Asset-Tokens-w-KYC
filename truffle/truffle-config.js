@@ -54,6 +54,18 @@ module.exports = {
         return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:7545", AccountIndex)
       },
       network_id: 5777
+    },
+    goerli_infura: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://goerli.infura.io/v3/93e37a31992643abb62ca64f80c266f5", AccountIndex)
+      },
+      network_id: 5
+    },
+    ropsten_infura: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/93e37a31992643abb62ca64f80c266f5", AccountIndex)
+      },
+      network_id: 3
     }
     //
     // An additional network, but with some advanced options…

@@ -1560,6 +1560,44 @@
     "version": "0.6.1+commit.e6f7d5a4.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {
+        "0x6faf93231a456e552dbc9961f58d9713ee4f2e69d15f1975b050ef0911053a7b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "purchaser",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "beneficiary",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "TokensPurchased",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xe3EF316E3c4c58b63C285DfCbb66bC4688727E01",
+      "transactionHash": "0x20e5e01688c15159cb2069acf5448d1df7e886ff8ccaedfcee5143d5fd95a8ab"
+    },
     "5777": {
       "events": {
         "0x6faf93231a456e552dbc9961f58d9713ee4f2e69d15f1975b050ef0911053a7b": {
@@ -1600,7 +1638,7 @@
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2022-07-08T22:01:54.640Z",
+  "updatedAt": "2022-07-08T22:33:37.346Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {
