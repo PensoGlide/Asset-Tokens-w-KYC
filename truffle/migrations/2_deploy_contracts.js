@@ -12,5 +12,6 @@ module.exports = async function(deployer) {
     await deployer.deploy(MyKYCContract);
     await deployer.deploy(MyTokenSale, 1, addr[0], MyToken.address, MyKYCContract.address);
     let instance = await MyToken.deployed();
+    await instance.addMinter(MyTokenSale.address);
     await instance.transfer(MyTokenSale.address, process.env.INITIAL_TOKENS);
 }

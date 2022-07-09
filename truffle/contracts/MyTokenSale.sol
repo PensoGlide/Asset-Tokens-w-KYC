@@ -1,9 +1,9 @@
 pragma solidity 0.6.1;
 
-import "./Crowdsale.sol";
+import "./MintedCrowdsale.sol";
 import "./KYC.sol";
 
-contract MyTokenSale is Crowdsale {
+contract MyTokenSale is MintedCrowdsale {
 
     KYCContract kyc;
 
@@ -13,6 +13,7 @@ contract MyTokenSale is Crowdsale {
         IERC20 token,
         KYCContract _kyc
     )
+        MintedCrowdsale()
         Crowdsale(rate, wallet, token)
         public
     {
